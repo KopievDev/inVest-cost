@@ -26,7 +26,7 @@ class WhatIf: UIViewController {
     @IBOutlet weak var fourButton: UIButton!
     
     var trueAnswer = 0
-    
+    var quest: Question?
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,8 @@ class WhatIf: UIViewController {
         secondButton.layer.cornerRadius = 10
         threeButton.layer.cornerRadius = 10
         fourButton.layer.cornerRadius = 10
-        
+        guard let question = quest else {return}
+        configWith(question: question)
         
     }
     
@@ -51,30 +52,22 @@ class WhatIf: UIViewController {
         fourButton.setTitle(question.fourAnswer, for: .normal)
         trueAnswer = question.trueAnswer
     }
-    
-    @IBAction func didTapOnFour(_ sender: Any) {
-        guard let but = sender as? UIButton else {return}
-        if but.tag == trueAnswer {
-            ModalView.alert.present()
-        }
-        print(but.tag)
-    }
     @IBAction func didTapOnThree(_ sender: Any) {
         guard let but = sender as? UIButton else {return}
         if but.tag == trueAnswer {
-            ModalView.alert.present()
-        }
-    }
-    @IBAction func didTapOnSecond(_ sender: Any) {
-        guard let but = sender as? UIButton else {return}
-        if but.tag == trueAnswer {
-            ModalView.alert.present()
-        }
-    }
-    @IBAction func didTapOnFirst(_ sender: Any) {
-        guard let but = sender as? UIButton else {return}
-        if but.tag == trueAnswer {
-            ModalView.alert.present()
+           let config = ModalViewConfigurator(action: { [weak self] in
+            guard let self = self else {return}
+                if let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf {
+                    vc.quest = questions[but.tag]
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }, title: "Поздравляем!", text: "Это правильный ответ!", subText: "", buttonText: "Дальше", animation: "yeah")
+            ModalView.alert.show(with: config)
+        } else {
+            let config = ModalViewConfigurator(action: {
+             }, title: "Ну такое...", text: "Попробуй еще", subText: "", buttonText: "Попробовать снова", animation: "error")
+             ModalView.alert.show(with: config)
+            
         }
     }
     

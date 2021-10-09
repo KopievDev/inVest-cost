@@ -33,13 +33,23 @@ class HomeScreen: UIViewController {
 
     @IBAction func didTapFirst(_ sender: Any) {
         if let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf {
+            guard let but = sender as? UIButton else {return}
+
+//            let question = Question(question: "Ты пидр?",
+//                                    firstAnswer: "Да",
+//                                    secondAnswer: "Наверно",
+//                                    threeAnswer: "Почему бы и нет?",
+//                                    fourAnswer: "сам пидр", trueAnswer: 3)
+            vc.quest = questions[0]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     @IBAction func didTapSecond(_ sender: Any) {
-        if let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf {
+        guard let but = sender as? UIButton,
+              let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf else {return}
+            vc.quest = questions[0]
             self.navigationController?.pushViewController(vc, animated: true)
-        }
+        
     }
     
 }
