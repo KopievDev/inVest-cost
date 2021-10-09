@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria-Bold.ttf">
+            <string>Geometria-Bold</string>
+        </array>
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home Screen-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeScreen" customModule="inVestCost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inVest Cost inVest CostinVest CostinVest CostinVest CostinVest CostinVest CostinVest Cost" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-p5-agi">
+                                <rect key="frame" x="43" y="369" width="327" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="VR3-ID-43V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="22"/>
+                                <color key="textColor" name="fontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-2C-qRp">
+                                <rect key="frame" x="43" y="671" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="F0t-dw-1jR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="39"/>
+                                <state key="normal" title="Вперед!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-JB-dzC">
+                                <rect key="frame" x="43" y="769" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="AzR-Ff-rpJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="39"/>
+                                <state key="normal" title="Вперед!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWm-3k-HF8" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="56" y="95" width="302" height="217"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="blueBack"/>
+                        <constraints>
+                            <constraint firstItem="oWm-3k-HF8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="51" id="0fe-wY-0Pm"/>
+                            <constraint firstItem="qbJ-2C-qRp" firstAttribute="trailing" secondItem="UcI-JB-dzC" secondAttribute="trailing" id="2pY-tO-0R5"/>
+                            <constraint firstItem="qbJ-2C-qRp" firstAttribute="leading" secondItem="UcI-JB-dzC" secondAttribute="leading" id="4GG-FA-VrF"/>
+                            <constraint firstItem="oWm-3k-HF8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="6Ay-Xa-qnS"/>
+                            <constraint firstItem="oLN-p5-agi" firstAttribute="trailing" secondItem="qbJ-2C-qRp" secondAttribute="trailing" id="6bb-eD-66m"/>
+                            <constraint firstItem="qbJ-2C-qRp" firstAttribute="top" secondItem="oLN-p5-agi" secondAttribute="bottom" constant="60" id="6uu-qF-q9f"/>
+                            <constraint firstItem="oWm-3k-HF8" firstAttribute="trailing" secondItem="oLN-p5-agi" secondAttribute="trailing" constant="-12" id="F9X-NT-MVi"/>
+                            <constraint firstItem="oWm-3k-HF8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UkP-RW-2ZW"/>
+                            <constraint firstItem="oLN-p5-agi" firstAttribute="leading" secondItem="qbJ-2C-qRp" secondAttribute="leading" id="ZMQ-Ut-Hnt"/>
+                            <constraint firstItem="oWm-3k-HF8" firstAttribute="leading" secondItem="oLN-p5-agi" secondAttribute="leading" constant="13" id="dCt-D9-fEd"/>
+                            <constraint firstItem="UcI-JB-dzC" firstAttribute="top" secondItem="qbJ-2C-qRp" secondAttribute="bottom" constant="37" id="ejM-2A-I9T"/>
+                            <constraint firstItem="oLN-p5-agi" firstAttribute="top" secondItem="oWm-3k-HF8" secondAttribute="bottom" constant="57" id="jWU-i8-Y7g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UcI-JB-dzC" secondAttribute="bottom" constant="32" id="qlN-XY-gqw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animateView" destination="oWm-3k-HF8" id="enH-c4-ELG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.56521739130437" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blueBack">
+            <color red="0.60000002384185791" green="0.67100000381469727" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="fontColor">
+            <color red="0.18400000035762787" green="0.20399999618530273" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

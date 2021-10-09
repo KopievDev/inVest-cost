@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79900C65FEA277D78CAF7B7C /* Pods_inVestCost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836D81E6D99948E464848B8F /* Pods_inVestCost.framework */; };
 		B5190A722711A7270037977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A712711A7270037977D /* AppDelegate.swift */; };
 		B5190A742711A7270037977D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A732711A7270037977D /* SceneDelegate.swift */; };
 		B5190A762711A7270037977D /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A752711A7270037977D /* Launch.swift */; };
@@ -18,9 +19,14 @@
 		B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A8D2711A9820037977D /* Geometria-Light.ttf */; };
 		B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A8F2711A98B0037977D /* Geometria-Medium.ttf */; };
 		B5190A922711A99C0037977D /* Geometria.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A912711A99C0037977D /* Geometria.ttf */; };
+		B5EA76AA2711B64F00AD89C8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76A92711B64F00AD89C8 /* HomeScreen.swift */; };
+		B5EA76AC2711B66100AD89C8 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76AB2711B66100AD89C8 /* HomeScreen.storyboard */; };
+		B5EA76AF2711B9CA00AD89C8 /* tv.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76AE2711B9CA00AD89C8 /* tv.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234EFBB5C696ABC7BE7D4119 /* Pods-inVestCost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inVestCost.debug.xcconfig"; path = "Target Support Files/Pods-inVestCost/Pods-inVestCost.debug.xcconfig"; sourceTree = "<group>"; };
+		836D81E6D99948E464848B8F /* Pods_inVestCost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inVestCost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5190A6E2711A7270037977D /* inVestCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inVestCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5190A712711A7270037977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5190A732711A7270037977D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +40,10 @@
 		B5190A8D2711A9820037977D /* Geometria-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Light.ttf"; sourceTree = "<group>"; };
 		B5190A8F2711A98B0037977D /* Geometria-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Medium.ttf"; sourceTree = "<group>"; };
 		B5190A912711A99C0037977D /* Geometria.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Geometria.ttf; sourceTree = "<group>"; };
+		B5EA76A92711B64F00AD89C8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B5EA76AB2711B66100AD89C8 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		B5EA76AE2711B9CA00AD89C8 /* tv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tv.json; sourceTree = "<group>"; };
+		DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inVestCost.release.xcconfig"; path = "Target Support Files/Pods-inVestCost/Pods-inVestCost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79900C65FEA277D78CAF7B7C /* Pods_inVestCost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47C1677B67FFA6C4DCC957EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				836D81E6D99948E464848B8F /* Pods_inVestCost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5190A652711A7270037977D = {
 			isa = PBXGroup;
 			children = (
 				B5190A702711A7270037977D /* inVestCost */,
 				B5190A6F2711A7270037977D /* Products */,
+				EA81B43BCA88A82095E19D87 /* Pods */,
+				47C1677B67FFA6C4DCC957EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +93,7 @@
 				B5190A862711A8A90037977D /* Resource */,
 				B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */,
 				B5190A7F2711A72A0037977D /* Info.plist */,
+				B5EA76AD2711B66B00AD89C8 /* HomeScreen */,
 			);
 			path = inVestCost;
 			sourceTree = "<group>";
@@ -88,6 +110,7 @@
 		B5190A862711A8A90037977D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B5EA76AE2711B9CA00AD89C8 /* tv.json */,
 				B5190A892711A9650037977D /* Geometria-Bold.ttf */,
 				B5190A912711A99C0037977D /* Geometria.ttf */,
 				B5190A8D2711A9820037977D /* Geometria-Light.ttf */,
@@ -98,6 +121,25 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B5EA76AD2711B66B00AD89C8 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA76A92711B64F00AD89C8 /* HomeScreen.swift */,
+				B5EA76AB2711B66100AD89C8 /* HomeScreen.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		EA81B43BCA88A82095E19D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				234EFBB5C696ABC7BE7D4119 /* Pods-inVestCost.debug.xcconfig */,
+				DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5190A822711A72A0037977D /* Build configuration list for PBXNativeTarget "inVestCost" */;
 			buildPhases = (
+				95A63DCFDAF6F1EB72096CF8 /* [CP] Check Pods Manifest.lock */,
 				B5190A6A2711A7270037977D /* Sources */,
 				B5190A6B2711A7270037977D /* Frameworks */,
 				B5190A6C2711A7270037977D /* Resources */,
+				7273D90ADF1A00E7C763B863 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +201,8 @@
 			files = (
 				B5190A7E2711A72A0037977D /* LaunchScreen.storyboard in Resources */,
 				B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */,
+				B5EA76AC2711B66100AD89C8 /* HomeScreen.storyboard in Resources */,
+				B5EA76AF2711B9CA00AD89C8 /* tv.json in Resources */,
 				B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */,
 				B5190A8A2711A9650037977D /* Geometria-Bold.ttf in Resources */,
 				B5190A7B2711A72A0037977D /* Assets.xcassets in Resources */,
@@ -168,11 +214,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7273D90ADF1A00E7C763B863 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-inVestCost/Pods-inVestCost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-inVestCost/Pods-inVestCost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-inVestCost/Pods-inVestCost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A63DCFDAF6F1EB72096CF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-inVestCost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5190A6A2711A7270037977D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EA76AA2711B64F00AD89C8 /* HomeScreen.swift in Sources */,
 				B5190A762711A7270037977D /* Launch.swift in Sources */,
 				B5190A722711A7270037977D /* AppDelegate.swift in Sources */,
 				B5190A742711A7270037977D /* SceneDelegate.swift in Sources */,
@@ -319,6 +408,7 @@
 		};
 		B5190A832711A72A0037977D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234EFBB5C696ABC7BE7D4119 /* Pods-inVestCost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +428,7 @@
 		};
 		B5190A842711A72A0037977D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

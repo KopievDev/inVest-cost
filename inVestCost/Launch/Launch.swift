@@ -21,13 +21,21 @@ class Launch: UIViewController {
         super.viewDidLoad()
         setUp()
     }
-
+    
     func setUp() {
+        navigationController?.navigationBar.isHidden = true
         femaleButton.layer.cornerRadius = 20
         maleButton.layer.cornerRadius = 20
         goButton.layer.cornerRadius = 10
-
+        
     }
-
+    
+    @IBAction func goHome(_ sender: Any) {
+        if let vc = UIStoryboard(name: "HomeScreen", bundle: nil).instantiateInitialViewController() as? HomeScreen {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
+
 
