@@ -9,11 +9,25 @@ import UIKit
 
 class Launch: UIViewController {
 
+    @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var ageTextfield: UITextField!
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBOutlet weak var maleButton: UIButton!
+    @IBOutlet weak var incomeTextfield: UITextField!
+    @IBOutlet weak var safeMoneyTextfield: UITextField!
+    @IBOutlet weak var goButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUp()
     }
 
+    func setUp() {
+        femaleButton.layer.cornerRadius = 20
+        maleButton.layer.cornerRadius = 20
+        goButton.layer.cornerRadius = 10
+
+    }
 
 }
 
