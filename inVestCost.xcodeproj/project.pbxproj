@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		79900C65FEA277D78CAF7B7C /* Pods_inVestCost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836D81E6D99948E464848B8F /* Pods_inVestCost.framework */; };
+		B33FE84E2711F3E6005D5F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FE84D2711F3E6005D5F0D /* MapViewController.swift */; };
+		B33FE8502711F3EF005D5F0D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FE84F2711F3EF005D5F0D /* MapView.swift */; };
+		B33FE8522711F3F8005D5F0D /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33FE8512711F3F8005D5F0D /* Map.storyboard */; };
+		B33FE8542711F58A005D5F0D /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33FE8532711F58A005D5F0D /* Effects.swift */; };
 		B5190A722711A7270037977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A712711A7270037977D /* AppDelegate.swift */; };
 		B5190A742711A7270037977D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A732711A7270037977D /* SceneDelegate.swift */; };
 		B5190A762711A7270037977D /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A752711A7270037977D /* Launch.swift */; };
@@ -32,6 +36,10 @@
 /* Begin PBXFileReference section */
 		234EFBB5C696ABC7BE7D4119 /* Pods-inVestCost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inVestCost.debug.xcconfig"; path = "Target Support Files/Pods-inVestCost/Pods-inVestCost.debug.xcconfig"; sourceTree = "<group>"; };
 		836D81E6D99948E464848B8F /* Pods_inVestCost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inVestCost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B33FE84D2711F3E6005D5F0D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B33FE84F2711F3EF005D5F0D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B33FE8512711F3F8005D5F0D /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		B33FE8532711F58A005D5F0D /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
 		B5190A6E2711A7270037977D /* inVestCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inVestCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5190A712711A7270037977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5190A732711A7270037977D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +82,16 @@
 				836D81E6D99948E464848B8F /* Pods_inVestCost.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33FE84C2711F3B9005D5F0D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B33FE84D2711F3E6005D5F0D /* MapViewController.swift */,
+				B33FE84F2711F3EF005D5F0D /* MapView.swift */,
+				B33FE8512711F3F8005D5F0D /* Map.storyboard */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		B5190A652711A7270037977D = {
@@ -146,6 +164,7 @@
 				B5190A712711A7270037977D /* AppDelegate.swift */,
 				B5EA76BB2711DC4600AD89C8 /* Theme.swift */,
 				B5190A732711A7270037977D /* SceneDelegate.swift */,
+				B33FE8532711F58A005D5F0D /* Effects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -156,6 +175,7 @@
 				B5190A852711A73E0037977D /* Launch */,
 				B5EA76AD2711B66B00AD89C8 /* HomeScreen */,
 				B5EA76B62711D2A800AD89C8 /* WhatIf */,
+				B33FE84C2711F3B9005D5F0D /* Map */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -249,6 +269,7 @@
 				B5190A792711A7270037977D /* Launch.storyboard in Resources */,
 				B5190A922711A99C0037977D /* Geometria.ttf in Resources */,
 				B5190A8C2711A9780037977D /* Geometria-Heavy.ttf in Resources */,
+				B33FE8522711F3F8005D5F0D /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +328,10 @@
 				B5190A762711A7270037977D /* Launch.swift in Sources */,
 				B5190A722711A7270037977D /* AppDelegate.swift in Sources */,
 				B5190A742711A7270037977D /* SceneDelegate.swift in Sources */,
+				B33FE8542711F58A005D5F0D /* Effects.swift in Sources */,
 				B5EA76BC2711DC4600AD89C8 /* Theme.swift in Sources */,
+				B33FE8502711F3EF005D5F0D /* MapView.swift in Sources */,
+				B33FE84E2711F3E6005D5F0D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
