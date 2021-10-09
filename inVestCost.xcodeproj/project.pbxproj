@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		B5190A722711A7270037977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A712711A7270037977D /* AppDelegate.swift */; };
 		B5190A742711A7270037977D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A732711A7270037977D /* SceneDelegate.swift */; };
-		B5190A762711A7270037977D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A752711A7270037977D /* ViewController.swift */; };
-		B5190A792711A7270037977D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5190A772711A7270037977D /* Main.storyboard */; };
+		B5190A762711A7270037977D /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5190A752711A7270037977D /* Launch.swift */; };
+		B5190A792711A7270037977D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5190A772711A7270037977D /* Launch.storyboard */; };
 		B5190A7B2711A72A0037977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5190A7A2711A72A0037977D /* Assets.xcassets */; };
 		B5190A7E2711A72A0037977D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */; };
+		B5190A8A2711A9650037977D /* Geometria-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A892711A9650037977D /* Geometria-Bold.ttf */; };
+		B5190A8C2711A9780037977D /* Geometria-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A8B2711A9780037977D /* Geometria-Heavy.ttf */; };
+		B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A8D2711A9820037977D /* Geometria-Light.ttf */; };
+		B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A8F2711A98B0037977D /* Geometria-Medium.ttf */; };
+		B5190A922711A99C0037977D /* Geometria.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5190A912711A99C0037977D /* Geometria.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5190A6E2711A7270037977D /* inVestCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inVestCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5190A712711A7270037977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5190A732711A7270037977D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5190A752711A7270037977D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5190A782711A7270037977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5190A752711A7270037977D /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		B5190A782711A7270037977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		B5190A7A2711A72A0037977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5190A7D2711A72A0037977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5190A7F2711A72A0037977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5190A892711A9650037977D /* Geometria-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Bold.ttf"; sourceTree = "<group>"; };
+		B5190A8B2711A9780037977D /* Geometria-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Heavy.ttf"; sourceTree = "<group>"; };
+		B5190A8D2711A9820037977D /* Geometria-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Light.ttf"; sourceTree = "<group>"; };
+		B5190A8F2711A98B0037977D /* Geometria-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geometria-Medium.ttf"; sourceTree = "<group>"; };
+		B5190A912711A99C0037977D /* Geometria.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Geometria.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,34 @@
 			children = (
 				B5190A712711A7270037977D /* AppDelegate.swift */,
 				B5190A732711A7270037977D /* SceneDelegate.swift */,
-				B5190A752711A7270037977D /* ViewController.swift */,
-				B5190A772711A7270037977D /* Main.storyboard */,
-				B5190A7A2711A72A0037977D /* Assets.xcassets */,
+				B5190A852711A73E0037977D /* Launch */,
+				B5190A862711A8A90037977D /* Resource */,
 				B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */,
 				B5190A7F2711A72A0037977D /* Info.plist */,
 			);
 			path = inVestCost;
+			sourceTree = "<group>";
+		};
+		B5190A852711A73E0037977D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				B5190A752711A7270037977D /* Launch.swift */,
+				B5190A772711A7270037977D /* Launch.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		B5190A862711A8A90037977D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5190A892711A9650037977D /* Geometria-Bold.ttf */,
+				B5190A912711A99C0037977D /* Geometria.ttf */,
+				B5190A8D2711A9820037977D /* Geometria-Light.ttf */,
+				B5190A8F2711A98B0037977D /* Geometria-Medium.ttf */,
+				B5190A8B2711A9780037977D /* Geometria-Heavy.ttf */,
+				B5190A7A2711A72A0037977D /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5190A7E2711A72A0037977D /* LaunchScreen.storyboard in Resources */,
+				B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */,
+				B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */,
+				B5190A8A2711A9650037977D /* Geometria-Bold.ttf in Resources */,
 				B5190A7B2711A72A0037977D /* Assets.xcassets in Resources */,
-				B5190A792711A7270037977D /* Main.storyboard in Resources */,
+				B5190A792711A7270037977D /* Launch.storyboard in Resources */,
+				B5190A922711A99C0037977D /* Geometria.ttf in Resources */,
+				B5190A8C2711A9780037977D /* Geometria-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5190A762711A7270037977D /* ViewController.swift in Sources */,
+				B5190A762711A7270037977D /* Launch.swift in Sources */,
 				B5190A722711A7270037977D /* AppDelegate.swift in Sources */,
 				B5190A742711A7270037977D /* SceneDelegate.swift in Sources */,
 			);
@@ -146,12 +182,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5190A772711A7270037977D /* Main.storyboard */ = {
+		B5190A772711A7270037977D /* Launch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B5190A782711A7270037977D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Launch.storyboard;
 			sourceTree = "<group>";
 		};
 		B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */ = {
