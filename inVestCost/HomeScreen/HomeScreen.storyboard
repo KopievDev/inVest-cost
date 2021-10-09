@@ -39,8 +39,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="F0t-dw-1jR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="39"/>
-                                <state key="normal" title="Вперед!">
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Заинтересован">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -50,8 +50,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="AzR-Ff-rpJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="39"/>
-                                <state key="normal" title="Вперед!">
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Не интересует">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>

@@ -58,16 +58,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jit-dB-Cu2">
-                                <rect key="frame" x="223" y="436" width="119" height="102"/>
+                                <rect key="frame" x="223" y="418" width="119" height="119"/>
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.45882352939999999" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jit-dB-Cu2" secondAttribute="height" multiplier="1:1" id="Lph-01-5v6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="🧙🏼‍♂️"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riO-hW-oct">
-                                <rect key="frame" x="72" y="436" width="120" height="102"/>
+                                <rect key="frame" x="72" y="418" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.50196078430000002" green="0.45882352939999999" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Kr2-ta-P7n"/>
+                                    <constraint firstAttribute="width" secondItem="riO-hW-oct" secondAttribute="height" multiplier="1:1" id="y5h-tF-mUL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="🧝🏼‍♂️"/>
@@ -108,7 +112,7 @@
                             <constraint firstItem="WYR-nB-9Mc" firstAttribute="leading" secondItem="riO-hW-oct" secondAttribute="leading" id="1eB-97-4Le"/>
                             <constraint firstItem="Dh7-eH-alQ" firstAttribute="leading" secondItem="mdc-55-CYS" secondAttribute="leading" id="2jq-HK-P0x"/>
                             <constraint firstItem="C1u-CQ-nyJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="7dr-At-B3N"/>
-                            <constraint firstItem="riO-hW-oct" firstAttribute="top" secondItem="WYR-nB-9Mc" secondAttribute="bottom" constant="30" id="AUS-ot-zmc"/>
+                            <constraint firstItem="riO-hW-oct" firstAttribute="top" relation="lessThanOrEqual" secondItem="WYR-nB-9Mc" secondAttribute="bottom" constant="30" id="AUS-ot-zmc"/>
                             <constraint firstItem="z0h-oM-O0A" firstAttribute="top" secondItem="jRS-vb-yXA" secondAttribute="bottom" constant="46" id="BPG-Bm-uNm"/>
                             <constraint firstItem="KZc-cD-yx7" firstAttribute="top" secondItem="riO-hW-oct" secondAttribute="bottom" constant="40" id="BU3-Id-J9j"/>
                             <constraint firstItem="jRS-vb-yXA" firstAttribute="top" secondItem="C1u-CQ-nyJ" secondAttribute="bottom" constant="16" id="DV7-rD-8ai"/>
@@ -131,6 +135,7 @@
                             <constraint firstItem="Dh7-eH-alQ" firstAttribute="trailing" secondItem="mdc-55-CYS" secondAttribute="trailing" id="pVF-ml-wUt"/>
                             <constraint firstItem="riO-hW-oct" firstAttribute="leading" secondItem="KZc-cD-yx7" secondAttribute="leading" id="phe-gE-yIi"/>
                             <constraint firstItem="Jit-dB-Cu2" firstAttribute="leading" secondItem="riO-hW-oct" secondAttribute="trailing" constant="31" id="rot-so-OQM"/>
+                            <constraint firstItem="WYR-nB-9Mc" firstAttribute="top" secondItem="z0h-oM-O0A" secondAttribute="bottom" constant="23" id="srT-4h-ZFM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ggb-Yv-OK2"/>

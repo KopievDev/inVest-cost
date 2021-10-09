@@ -23,7 +23,6 @@ class HomeScreen: UIViewController {
         animateView.animationSpeed = 2
         animateView.loopMode = .loop
         animateView.play()
-
     }
     
   
