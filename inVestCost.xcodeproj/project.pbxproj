@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,11 @@
 		B5EA76AA2711B64F00AD89C8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76A92711B64F00AD89C8 /* HomeScreen.swift */; };
 		B5EA76AC2711B66100AD89C8 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76AB2711B66100AD89C8 /* HomeScreen.storyboard */; };
 		B5EA76AF2711B9CA00AD89C8 /* tv.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76AE2711B9CA00AD89C8 /* tv.json */; };
+		B5EA76B32711D26E00AD89C8 /* WhatIf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76B22711D26E00AD89C8 /* WhatIf.swift */; };
+		B5EA76B52711D2A400AD89C8 /* WhatIf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76B42711D2A400AD89C8 /* WhatIf.storyboard */; };
+		B5EA76B82711D94D00AD89C8 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76B72711D94D00AD89C8 /* ModalView.swift */; };
+		B5EA76BA2711DB5A00AD89C8 /* yeah.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76B92711DB5A00AD89C8 /* yeah.json */; };
+		B5EA76BC2711DC4600AD89C8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76BB2711DC4600AD89C8 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		B5EA76A92711B64F00AD89C8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B5EA76AB2711B66100AD89C8 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		B5EA76AE2711B9CA00AD89C8 /* tv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tv.json; sourceTree = "<group>"; };
+		B5EA76B22711D26E00AD89C8 /* WhatIf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIf.swift; sourceTree = "<group>"; };
+		B5EA76B42711D2A400AD89C8 /* WhatIf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatIf.storyboard; sourceTree = "<group>"; };
+		B5EA76B72711D94D00AD89C8 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		B5EA76B92711DB5A00AD89C8 /* yeah.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yeah.json; sourceTree = "<group>"; };
+		B5EA76BB2711DC4600AD89C8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inVestCost.release.xcconfig"; path = "Target Support Files/Pods-inVestCost/Pods-inVestCost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,13 +97,10 @@
 		B5190A702711A7270037977D /* inVestCost */ = {
 			isa = PBXGroup;
 			children = (
-				B5190A712711A7270037977D /* AppDelegate.swift */,
-				B5190A732711A7270037977D /* SceneDelegate.swift */,
-				B5190A852711A73E0037977D /* Launch */,
+				B5EA76B12711C89500AD89C8 /* Screens */,
+				B5EA76B02711C65A00AD89C8 /* App */,
 				B5190A862711A8A90037977D /* Resource */,
-				B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */,
 				B5190A7F2711A72A0037977D /* Info.plist */,
-				B5EA76AD2711B66B00AD89C8 /* HomeScreen */,
 			);
 			path = inVestCost;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				B5EA76AE2711B9CA00AD89C8 /* tv.json */,
+				B5EA76B92711DB5A00AD89C8 /* yeah.json */,
 				B5190A892711A9650037977D /* Geometria-Bold.ttf */,
 				B5190A912711A99C0037977D /* Geometria.ttf */,
 				B5190A8D2711A9820037977D /* Geometria-Light.ttf */,
@@ -130,13 +138,43 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
+		B5EA76B02711C65A00AD89C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA76B72711D94D00AD89C8 /* ModalView.swift */,
+				B5190A7C2711A72A0037977D /* LaunchScreen.storyboard */,
+				B5190A712711A7270037977D /* AppDelegate.swift */,
+				B5EA76BB2711DC4600AD89C8 /* Theme.swift */,
+				B5190A732711A7270037977D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5EA76B12711C89500AD89C8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B5190A852711A73E0037977D /* Launch */,
+				B5EA76AD2711B66B00AD89C8 /* HomeScreen */,
+				B5EA76B62711D2A800AD89C8 /* WhatIf */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B5EA76B62711D2A800AD89C8 /* WhatIf */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA76B22711D26E00AD89C8 /* WhatIf.swift */,
+				B5EA76B42711D2A400AD89C8 /* WhatIf.storyboard */,
+			);
+			path = WhatIf;
+			sourceTree = "<group>";
+		};
 		EA81B43BCA88A82095E19D87 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				234EFBB5C696ABC7BE7D4119 /* Pods-inVestCost.debug.xcconfig */,
 				DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,11 +239,13 @@
 			files = (
 				B5190A7E2711A72A0037977D /* LaunchScreen.storyboard in Resources */,
 				B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */,
+				B5EA76B52711D2A400AD89C8 /* WhatIf.storyboard in Resources */,
 				B5EA76AC2711B66100AD89C8 /* HomeScreen.storyboard in Resources */,
 				B5EA76AF2711B9CA00AD89C8 /* tv.json in Resources */,
 				B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */,
 				B5190A8A2711A9650037977D /* Geometria-Bold.ttf in Resources */,
 				B5190A7B2711A72A0037977D /* Assets.xcassets in Resources */,
+				B5EA76BA2711DB5A00AD89C8 /* yeah.json in Resources */,
 				B5190A792711A7270037977D /* Launch.storyboard in Resources */,
 				B5190A922711A99C0037977D /* Geometria.ttf in Resources */,
 				B5190A8C2711A9780037977D /* Geometria-Heavy.ttf in Resources */,
@@ -261,10 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EA76B82711D94D00AD89C8 /* ModalView.swift in Sources */,
+				B5EA76B32711D26E00AD89C8 /* WhatIf.swift in Sources */,
 				B5EA76AA2711B64F00AD89C8 /* HomeScreen.swift in Sources */,
 				B5190A762711A7270037977D /* Launch.swift in Sources */,
 				B5190A722711A7270037977D /* AppDelegate.swift in Sources */,
 				B5190A742711A7270037977D /* SceneDelegate.swift in Sources */,
+				B5EA76BC2711DC4600AD89C8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="242" id="VR3-ID-43V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="22"/>
-                                <color key="textColor" name="fontColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-2C-qRp">
@@ -40,20 +40,27 @@
                                     <constraint firstAttribute="height" constant="61" id="F0t-dw-1jR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
-                                <state key="normal" title="Заинтересован">
+                                <state key="normal" title="Да, интересно">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapFirst:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sVL-sN-4NI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-JB-dzC">
                                 <rect key="frame" x="43" y="769" width="327" height="61"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="AzR-Ff-rpJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="QMP-Au-OAI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
-                                <state key="normal" title="Не интересует">
+                                <state key="normal" title="Нет, но интересно">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapSecond:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e9e-J9-GaS"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWm-3k-HF8" customClass="AnimationView" customModule="Lottie">
                                 <rect key="frame" x="56" y="95" width="302" height="217"/>
@@ -80,6 +87,9 @@
                     </view>
                     <connections>
                         <outlet property="animateView" destination="oWm-3k-HF8" id="enH-c4-ELG"/>
+                        <outlet property="firstButton" destination="qbJ-2C-qRp" id="1DS-x4-G2T"/>
+                        <outlet property="messageLabel" destination="oLN-p5-agi" id="DcK-Rg-OHN"/>
+                        <outlet property="secondButton" destination="UcI-JB-dzC" id="jfU-fH-0AD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -90,9 +100,6 @@
     <resources>
         <namedColor name="blueBack">
             <color red="0.60000002384185791" green="0.67100000381469727" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="fontColor">
-            <color red="0.18400000035762787" green="0.20399999618530273" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

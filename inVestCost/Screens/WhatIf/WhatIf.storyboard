@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria-Bold.ttf">
+            <string>Geometria-Bold</string>
+        </array>
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--What If-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WhatIf" customModule="inVestCost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1r-21-ZPk">
+                                <rect key="frame" x="44" y="619" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="r3E-68-xGw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Да, интересно">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnSecond:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Dk8-YX-XSL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-mA-tZt">
+                                <rect key="frame" x="44" y="700" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="sGI-V0-k0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Да, интересно">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XRW-Wb-3ti"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-4z-G5G">
+                                <rect key="frame" x="44" y="781" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="6fp-tu-i9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Да, интересно">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnFour:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3nk-WX-28M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inVest Cost inVest CostinVest CostinVest CostinVest CostinVest CostinVest CostinVest Cost" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-Kt-jJV">
+                                <rect key="frame" x="44" y="141" width="327" height="88"/>
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А что если бы?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-QS-RLa">
+                                <rect key="frame" x="44" y="73" width="327" height="33"/>
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="33"/>
+                                <color key="textColor" name="fontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rK-t2-zgY">
+                                <rect key="frame" x="44" y="538" width="327" height="61"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.51372549020000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="9vF-Yv-5kO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="30"/>
+                                <state key="normal" title="Да, интересно">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnFirst:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lvD-SJ-VyX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="blueBack"/>
+                        <constraints>
+                            <constraint firstItem="aOE-4z-G5G" firstAttribute="top" secondItem="H2F-mA-tZt" secondAttribute="bottom" constant="20" id="2xr-gO-h9g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nq0-QS-RLa" secondAttribute="trailing" constant="43" id="J3y-f4-Snc"/>
+                            <constraint firstItem="aOE-4z-G5G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="J6R-gb-zMT"/>
+                            <constraint firstItem="0rK-t2-zgY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="Ot8-g0-1cq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aOE-4z-G5G" secondAttribute="bottom" constant="20" id="RB6-wF-Xlz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BA3-Kt-jJV" secondAttribute="trailing" constant="43" id="WQj-Og-Zij"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0rK-t2-zgY" secondAttribute="trailing" constant="43" id="Xp7-FS-IEl"/>
+                            <constraint firstItem="nq0-QS-RLa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="aQK-hf-mjR"/>
+                            <constraint firstItem="Y1r-21-ZPk" firstAttribute="top" secondItem="0rK-t2-zgY" secondAttribute="bottom" constant="20" id="cXx-s0-9YH"/>
+                            <constraint firstItem="H2F-mA-tZt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="eGe-pX-7Nx"/>
+                            <constraint firstItem="BA3-Kt-jJV" firstAttribute="top" secondItem="nq0-QS-RLa" secondAttribute="bottom" constant="35" id="iOc-SB-SxH"/>
+                            <constraint firstItem="0rK-t2-zgY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BA3-Kt-jJV" secondAttribute="bottom" constant="25" id="irg-nj-poC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H2F-mA-tZt" secondAttribute="trailing" constant="43" id="kcV-Ux-Ss4"/>
+                            <constraint firstItem="Y1r-21-ZPk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="lyh-7c-ZuA"/>
+                            <constraint firstItem="BA3-Kt-jJV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="pYI-Sd-q3g"/>
+                            <constraint firstItem="H2F-mA-tZt" firstAttribute="top" secondItem="Y1r-21-ZPk" secondAttribute="bottom" constant="20" id="tEQ-dU-wEg"/>
+                            <constraint firstItem="nq0-QS-RLa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="29" id="ueg-Xl-IxD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aOE-4z-G5G" secondAttribute="trailing" constant="43" id="uu3-1X-Xi7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y1r-21-ZPk" secondAttribute="trailing" constant="43" id="xdG-Df-YNg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstButton" destination="0rK-t2-zgY" id="mO1-re-I6Q"/>
+                        <outlet property="fourButton" destination="aOE-4z-G5G" id="1DW-M2-1dR"/>
+                        <outlet property="questionLabel" destination="BA3-Kt-jJV" id="rwB-Ji-2JL"/>
+                        <outlet property="secondButton" destination="Y1r-21-ZPk" id="yNb-bD-Ciy"/>
+                        <outlet property="threeButton" destination="H2F-mA-tZt" id="ikE-b9-tDg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blueBack">
+            <color red="0.60000002384185791" green="0.67100000381469727" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="fontColor">
+            <color red="0.18400000035762787" green="0.20399999618530273" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
