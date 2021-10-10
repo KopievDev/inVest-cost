@@ -14,7 +14,7 @@ struct ModalViewConfigurator {
     let text: String
     let subText: String
     let buttonText: String
-    let image: UIImage?
+    let animation: String
 }
 
 class ModalView: UIView {
@@ -118,7 +118,9 @@ class ModalView: UIView {
         setUp()
         fatalError("init(coder:) has not been implemented")
     }
-    
+    deinit {
+        print("✅✅✅✅✅✅")
+    }
     // MARK: - Helpers
     
    public func present() {
@@ -134,7 +136,7 @@ class ModalView: UIView {
     }
     
    public func show(with configuration: ModalViewConfigurator) {
-//        iconImageView.image = configuration.image
+        iconImageView.animation = Animation.named(configuration.animation)
         actionButton.setTitle(configuration.buttonText, for: .normal)
         textLabel.text = configuration.text
         subTextLabel.text = configuration.subText
@@ -219,12 +221,12 @@ class ModalView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         actionButton.dropShadow()
-        UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut) {
-            self.formImageView.transform = .identity
-        }
-        formImageView.rotate(duration: 4)
-        formImageView.scale(duration: 4, scale: 0.86)
-        iconImageView.scale(duration: 1.5)
+//        UIView.animate(withDuration: 0.5, delay: 0.2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut) {
+//            self.formImageView.transform = .identity
+//        }
+//        formImageView.rotate(duration: 4)
+//        formImageView.scale(duration: 4, scale: 0.86)
+//        iconImageView.scale(duration: 1.5)
     }
     
     // MARK: - Selectors
@@ -249,6 +251,7 @@ class ModalView: UIView {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut) {self.layoutIfNeeded()} completion: { isComleted in
             if isComleted {
                 self.removeFromSuperview()
+        
             }
         }
     }

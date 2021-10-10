@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapOnSecond:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Dk8-YX-XSL"/>
+                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="igC-83-0YL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2F-mA-tZt">
@@ -49,7 +49,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XRW-Wb-3ti"/>
+                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y8b-x7-z3Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-4z-G5G">
@@ -63,7 +63,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapOnFour:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3nk-WX-28M"/>
+                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ps4-Ko-I0f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inVest Cost inVest CostinVest CostinVest CostinVest CostinVest CostinVest CostinVest Cost" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-Kt-jJV">
@@ -89,7 +89,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapOnFirst:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lvD-SJ-VyX"/>
+                                    <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GSU-fk-YQY"/>
                                 </connections>
                             </button>
                         </subviews>
