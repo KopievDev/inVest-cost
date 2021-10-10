@@ -1,4 +1,4 @@
-name: Swift
+name: SWIFT
 
 on:
   push:
@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-
+    - uses: fwal/setup-swift@v1
+    - name: Build and test
+      run: |
+          swift package init
+          swift package generate-xcodeproj 
+          swift build -v 
+          swift test -v
