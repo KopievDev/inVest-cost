@@ -3,9 +3,15 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria-Bold.ttf">
+            <string>Geometria-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -14,8 +20,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ico" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-mq-Gyt">
+                                <rect key="frame" x="107" y="373" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="c4w-eC-stf"/>
+                                    <constraint firstAttribute="height" constant="150" id="pJ4-ZH-DVY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начни инвестировать в себя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1X-0N-5Yq">
+                                <rect key="frame" x="56" y="543" width="302" height="21"/>
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="21"/>
+                                <color key="textColor" name="fontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.6705882352941176" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q1X-0N-5Yq" secondAttribute="trailing" constant="56" id="X2u-Fg-1PW"/>
+                            <constraint firstItem="q1X-0N-5Yq" firstAttribute="top" secondItem="7SH-mq-Gyt" secondAttribute="bottom" constant="20" id="bhW-Ci-mAi"/>
+                            <constraint firstItem="7SH-mq-Gyt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eoe-Qj-un2"/>
+                            <constraint firstItem="q1X-0N-5Yq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="pII-ih-8RL"/>
+                            <constraint firstItem="7SH-mq-Gyt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xAx-Ja-ojG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -23,4 +51,10 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_ico" width="438" height="150"/>
+        <namedColor name="fontColor">
+            <color red="0.18400000035762787" green="0.20399999618530273" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
