@@ -26,30 +26,21 @@ class HomeScreen: UIViewController {
         animateView.animationSpeed = 2
         animateView.loopMode = .loop
         animateView.play()
-        messageLabel.text = "Добрый день! Сегодня в банке ВТБ проходит акция "
+        messageLabel.text = "Добрый день! Вам интересно пройти викторину \n'А что если бы?'"
         firstButton.layer.cornerRadius = 10
         secondButton.layer.cornerRadius = 10
     }
 
     @IBAction func didTapFirst(_ sender: Any) {
         if let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf {
-            guard let but = sender as? UIButton else {return}
-
-//            let question = Question(question: "Ты пидр?",
-//                                    firstAnswer: "Да",
-//                                    secondAnswer: "Наверно",
-//                                    threeAnswer: "Почему бы и нет?",
-//                                    fourAnswer: "сам пидр", trueAnswer: 3)
             vc.quest = questions[0]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
     @IBAction func didTapSecond(_ sender: Any) {
-        guard let but = sender as? UIButton,
-              let vc = UIStoryboard(name: "WhatIf", bundle: nil).instantiateInitialViewController() as? WhatIf else {return}
-            vc.quest = questions[0]
+        guard let vc = UIStoryboard(name: "Map", bundle: nil).instantiateInitialViewController() as? MapViewController else {return}
             self.navigationController?.pushViewController(vc, animated: true)
-        
     }
     
 }
