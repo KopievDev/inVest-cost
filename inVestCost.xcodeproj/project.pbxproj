@@ -30,6 +30,10 @@
 		B5EA76BE2711E32B00AD89C8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76BD2711E32B00AD89C8 /* DataProvider.swift */; };
 		B5EA76C02711F00500AD89C8 /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76BF2711F00500AD89C8 /* wrong.json */; };
 		B5EA76C22711F93700AD89C8 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76C12711F93700AD89C8 /* error.json */; };
+		B5EA76C827129E1F00AD89C8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76C527129E1F00AD89C8 /* Map.storyboard */; };
+		B5EA76C927129E1F00AD89C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76C627129E1F00AD89C8 /* MapView.swift */; };
+		B5EA76CA27129E1F00AD89C8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA76C727129E1F00AD89C8 /* MapViewController.swift */; };
+		B5EA76CD2712B52A00AD89C8 /* 58948-finance-blue.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EA76CC2712B52900AD89C8 /* 58948-finance-blue.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		B5EA76BD2711E32B00AD89C8 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		B5EA76BF2711F00500AD89C8 /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
 		B5EA76C12711F93700AD89C8 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		B5EA76C527129E1F00AD89C8 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		B5EA76C627129E1F00AD89C8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B5EA76C727129E1F00AD89C8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B5EA76CC2712B52900AD89C8 /* 58948-finance-blue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "58948-finance-blue.json"; sourceTree = "<group>"; };
 		DF778FD84AAAC7B99A3424D7 /* Pods-inVestCost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inVestCost.release.xcconfig"; path = "Target Support Files/Pods-inVestCost/Pods-inVestCost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +131,7 @@
 		B5190A862711A8A90037977D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B5EA76CC2712B52900AD89C8 /* 58948-finance-blue.json */,
 				B5EA76C12711F93700AD89C8 /* error.json */,
 				B5EA76AE2711B9CA00AD89C8 /* tv.json */,
 				B5EA76BF2711F00500AD89C8 /* wrong.json */,
@@ -161,6 +170,7 @@
 		B5EA76B12711C89500AD89C8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B5EA76CB27129E2600AD89C8 /* Map */,
 				B5190A852711A73E0037977D /* Launch */,
 				B5EA76AD2711B66B00AD89C8 /* HomeScreen */,
 				B5EA76B62711D2A800AD89C8 /* WhatIf */,
@@ -176,6 +186,16 @@
 				B5EA76BD2711E32B00AD89C8 /* DataProvider.swift */,
 			);
 			path = WhatIf;
+			sourceTree = "<group>";
+		};
+		B5EA76CB27129E2600AD89C8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA76C527129E1F00AD89C8 /* Map.storyboard */,
+				B5EA76C627129E1F00AD89C8 /* MapView.swift */,
+				B5EA76C727129E1F00AD89C8 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		EA81B43BCA88A82095E19D87 /* Pods */ = {
@@ -248,10 +268,12 @@
 			files = (
 				B5190A7E2711A72A0037977D /* LaunchScreen.storyboard in Resources */,
 				B5190A8E2711A9820037977D /* Geometria-Light.ttf in Resources */,
+				B5EA76C827129E1F00AD89C8 /* Map.storyboard in Resources */,
 				B5EA76B52711D2A400AD89C8 /* WhatIf.storyboard in Resources */,
 				B5EA76AC2711B66100AD89C8 /* HomeScreen.storyboard in Resources */,
 				B5EA76AF2711B9CA00AD89C8 /* tv.json in Resources */,
 				B5EA76C02711F00500AD89C8 /* wrong.json in Resources */,
+				B5EA76CD2712B52A00AD89C8 /* 58948-finance-blue.json in Resources */,
 				B5EA76C22711F93700AD89C8 /* error.json in Resources */,
 				B5190A902711A98B0037977D /* Geometria-Medium.ttf in Resources */,
 				B5190A8A2711A9650037977D /* Geometria-Bold.ttf in Resources */,
@@ -315,10 +337,12 @@
 				B5EA76B82711D94D00AD89C8 /* ModalView.swift in Sources */,
 				B5EA76B32711D26E00AD89C8 /* WhatIf.swift in Sources */,
 				B5EA76BE2711E32B00AD89C8 /* DataProvider.swift in Sources */,
+				B5EA76CA27129E1F00AD89C8 /* MapViewController.swift in Sources */,
 				B5EA76AA2711B64F00AD89C8 /* HomeScreen.swift in Sources */,
 				B5190A762711A7270037977D /* Launch.swift in Sources */,
 				B5190A722711A7270037977D /* AppDelegate.swift in Sources */,
 				B5190A742711A7270037977D /* SceneDelegate.swift in Sources */,
+				B5EA76C927129E1F00AD89C8 /* MapView.swift in Sources */,
 				B5EA76BC2711DC4600AD89C8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

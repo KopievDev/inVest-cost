@@ -72,7 +72,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А что если бы?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-QS-RLa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="А что если бы ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-QS-RLa">
                                 <rect key="frame" x="44" y="73" width="327" height="33"/>
                                 <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="33"/>
                                 <color key="textColor" name="fontColor"/>
@@ -92,11 +92,17 @@
                                     <action selector="didTapOnThree:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GSU-fk-YQY"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-35-gox" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="75" y="292" width="264" height="197"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="blueBack"/>
                         <constraints>
                             <constraint firstItem="aOE-4z-G5G" firstAttribute="top" secondItem="H2F-mA-tZt" secondAttribute="bottom" constant="20" id="2xr-gO-h9g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A2p-35-gox" secondAttribute="trailing" constant="75" id="BQp-PF-ShV"/>
+                            <constraint firstItem="A2p-35-gox" firstAttribute="top" secondItem="BA3-Kt-jJV" secondAttribute="bottom" constant="63" id="HAN-3T-x7G"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nq0-QS-RLa" secondAttribute="trailing" constant="43" id="J3y-f4-Snc"/>
                             <constraint firstItem="aOE-4z-G5G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="J6R-gb-zMT"/>
                             <constraint firstItem="0rK-t2-zgY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="Ot8-g0-1cq"/>
@@ -104,10 +110,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BA3-Kt-jJV" secondAttribute="trailing" constant="43" id="WQj-Og-Zij"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0rK-t2-zgY" secondAttribute="trailing" constant="43" id="Xp7-FS-IEl"/>
                             <constraint firstItem="nq0-QS-RLa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="aQK-hf-mjR"/>
+                            <constraint firstItem="0rK-t2-zgY" firstAttribute="top" secondItem="A2p-35-gox" secondAttribute="bottom" constant="49" id="bty-Cg-aOf"/>
                             <constraint firstItem="Y1r-21-ZPk" firstAttribute="top" secondItem="0rK-t2-zgY" secondAttribute="bottom" constant="20" id="cXx-s0-9YH"/>
                             <constraint firstItem="H2F-mA-tZt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="eGe-pX-7Nx"/>
                             <constraint firstItem="BA3-Kt-jJV" firstAttribute="top" secondItem="nq0-QS-RLa" secondAttribute="bottom" constant="35" id="iOc-SB-SxH"/>
                             <constraint firstItem="0rK-t2-zgY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BA3-Kt-jJV" secondAttribute="bottom" constant="25" id="irg-nj-poC"/>
+                            <constraint firstItem="A2p-35-gox" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="ja1-EJ-my0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H2F-mA-tZt" secondAttribute="trailing" constant="43" id="kcV-Ux-Ss4"/>
                             <constraint firstItem="Y1r-21-ZPk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="lyh-7c-ZuA"/>
                             <constraint firstItem="BA3-Kt-jJV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="44" id="pYI-Sd-q3g"/>
@@ -118,6 +126,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="anim" destination="A2p-35-gox" id="N5U-ri-j7U"/>
                         <outlet property="firstButton" destination="0rK-t2-zgY" id="mO1-re-I6Q"/>
                         <outlet property="fourButton" destination="aOE-4z-G5G" id="1DW-M2-1dR"/>
                         <outlet property="questionLabel" destination="BA3-Kt-jJV" id="rwB-Ji-2JL"/>

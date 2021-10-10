@@ -36,6 +36,17 @@ class Launch: UIViewController {
         }
     }
     
+    @IBAction func tapToMale(_ sender: Any) {
+        maleButton.isHighlighted = true
+        femaleButton.isHighlighted = false
+        
+    }
+    @IBAction func tapToFemale(_ sender: Any) {
+        maleButton.isHighlighted = false
+        femaleButton.isHighlighted = true
+    }
+    
+    
 }
 
 
